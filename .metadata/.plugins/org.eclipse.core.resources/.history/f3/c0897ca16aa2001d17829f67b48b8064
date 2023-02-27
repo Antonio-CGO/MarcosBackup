@@ -1,0 +1,148 @@
+import java.util.Scanner;
+
+import java.util.Calendar;
+import java.util.ArrayList;
+public class Hotel{
+	private static int opcao;
+		public static void main(String[] args) {
+			
+	
+			
+		System.out.println("");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ *. SEJA BEM VINDO .* ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬");
+		System.out.println("------------------ *o* HOTEL HOSPÍCIO *o* --------------------");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("");
+		
+		Quartos novoQuarto = new Quartos();	
+		String nome;
+		String CPF;
+		String endereço;
+		Hospede novoHospede = new Hospede();
+        Scanner sc = new Scanner(System.in);
+		
+		ArrayList <Hospede> Hospedes = new ArrayList();
+		
+		do{
+			
+			System.out.println("-------------------------------");
+			System.out.println("============= MENU ============");
+            System.out.println("");
+			System.out.println("[1] Cadastrar dados do Hóspede");
+			System.out.println("[2] Escolher quarto para o Hóspede");
+			System.out.println("[3] Listar Hóspedes no Hotel");
+			System.out.println("[4] Fazer Checkout do Hóspede");
+			System.out.println("[0] Sair");
+			System.out.println("");
+			System.out.println("Digite a opção desejada: ");
+			System.out.println("");
+			opcao = sc.nextInt();
+			sc.nextLine();
+			
+			switch (opcao) {
+   
+			case 1: { 
+			
+   
+			System.out.println();
+			
+			System.out.println("=====================CADASTRO DE CLIENTE======================");
+			 
+			System.out.println();
+			
+			System.out.println("Digite o nome completo do Cliente: ");
+			nome = sc.nextLine();
+			
+			DataCalendario data = new DataCalendario();
+			data.datadenascimento();
+			
+			System.out.println("Digite o CPF completo do Cliente: ");
+			 CPF = sc.nextLine();
+			
+			System.out.println("Digite o endereço do Cliente: ");
+			endereço = sc.nextLine();
+			 
+		
+			novoHospede = new Hospede(nome, CPF, endereço);
+			
+			System.out.println("Hóspede Cadastrado!!");
+			
+			novoQuarto.insereHospede(novoHospede);
+			
+			
+			
+			break;
+			
+			}
+			
+			case 2: {
+			System.out.println("======== ESCOLHER QUARTO ========");
+			
+			System.out.println("Qual quarto para o cliente ? : ");
+			sc.nextInt();
+			Quartos vaga = new Quartos();
+			vaga.numerodequartos();
+			
+			break;
+			
+			}
+			
+			case 3: {
+			
+			System.out.println("========= CLIENTES HOSPEDADOS ==========");
+				
+				novoQuarto.listarHospede();
+				break;
+				
+				
+			}
+		
+			case 4: {
+		    System.out.println("======== FAZER CHECKOUT ===========");
+			
+			
+			
+			
+			break;
+			
+			
+			}
+		
+			default:
+				System.out.println("Opção inválida, digite a opção correta seu IMBECIL!!!!!! ");
+				
+			case 0: {
+			System.out.println("========= SAIR ============");
+			 System.out.println(" SAINDO...");
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+			
+		}while(opcao !=0); 
+        
+		}
+		
+		}
+        
+
+		
+
+    
+    
+    
+    
+    
+    
+
+

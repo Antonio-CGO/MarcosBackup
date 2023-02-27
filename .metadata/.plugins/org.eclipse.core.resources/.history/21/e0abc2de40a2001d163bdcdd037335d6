@@ -1,0 +1,34 @@
+
+public class Quartos {
+
+//int[] quarto = { 201,202,203,204,301,302,303,304};
+
+   public static void main(String[] args) {
+	numeroquarto();
+}
+
+static void numeroquarto() {
+	int[] quarto = new int [8];
+	
+	quarto[0] = 201;
+	quarto[1] = 202; 
+	quarto[2] = 203; 
+	quarto[3] = 204; 
+	quarto[4] = 301; 
+	quarto[5] = 302;
+	quarto[6] = 303;
+	quarto[7] = 304;
+	
+	
+	if (quarto.length <= 8 ) {
+     System.out.println("Quarto cadastrado com sucesso!!!!");
+}
+	else {
+		System.out.println("Quarto inexistente");
+	}
+}
+}
+
+
+
+

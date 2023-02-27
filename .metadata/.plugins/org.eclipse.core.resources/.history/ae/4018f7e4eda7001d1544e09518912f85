@@ -1,0 +1,174 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+import java.util.Calendar;
+import java.util.ArrayList;
+public class Hotel{
+	private static int opcao;
+		public static void main(String[] args) {
+			
+			
+		
+		
+		System.out.println("");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ *. SEJA BEM VINDO .* ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬");
+		System.out.println("------------------ *o* HOTEL HOSPÍCIO *o* --------------------");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("");
+		
+		Quartos novoQuarto = new Quartos();
+		Hospede novoHospede = new Hospede();
+        Scanner sc = new Scanner(System.in);
+		
+		ArrayList <Quartos> Hospedes = new ArrayList();
+		
+		do{                           
+			
+			System.out.println("-------------------------------");
+			System.out.println("============= MENU ============");
+            System.out.println("");
+			System.out.println("[1] Cadastrar dados do Hóspede");
+			System.out.println("[2] Escolher quarto para o Hóspede");
+			System.out.println("[3] Listar Hóspedes no Hotel");
+			System.out.println("[4] Fazer Checkout do Hóspede");
+			System.out.println("[0] Sair");
+			System.out.println("");
+			System.out.println("Digite a opção desejada: ");
+			System.out.println("");
+			opcao = sc.nextInt();
+			sc.nextLine();
+			
+			switch (opcao) {
+			
+			
+			case 1: { 
+			
+   
+			System.out.println();
+			
+			System.out.println("=====================CADASTRO DE CLIENTE======================");
+			 
+			System.out.println();
+			
+			System.out.println("Digite o nome completo do Cliente: ");
+			// (nome.length() < 10 || nome.length() > 40); 
+			//Hospede nome = new Hospede();
+			//nome.Hospede();
+			//nome = sc.nextLine();
+			
+			
+			DataCalendario data = new DataCalendario();
+			data.datadenascimento();
+		
+
+			 Hospede hospede1 = new Hospede();
+	         hospede1.getCpf();
+	            
+			String regex = "[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}";
+		 
+			Pattern pattern = pattern.compile(regex);
+			Matcher matcher = pattern.matcher(CPF);
+		
+			if() {
+				
+			}
+			System.out.println("Digite o CPF completo do Cliente: ");
+		
+			
+			
+			 CPF = sc.nextLine();
+			
+			System.out.println("Digite o endereço do Cliente: ");
+			endereço = sc.nextLine();
+			 
+			String cadastrar =  ("Adicionar cadastro (S/N) ?");
+			if (cadastrar.equalsIgnoreCase("s")) {
+				System.out.println("Cadastro adicionado !!!");
+				
+			} else if (cadastrar.equalsIgnoreCase("n")){
+				System.out.println("Cadastro ignorado !!!");
+			} else {
+				System.out.println("\nOpção inválida seu noob, vou ignorar o cadastro só pra você ter que digitar denovo !!! \n");
+			}
+			
+			
+			novoHospede = new Hospede(nome, CPF, endereço);
+			Quartos.add(novoHospede);
+			int size = Quartos.size();
+			System.out.println("Hóspede Cadastrado!!");
+			
+			novoQuarto.insereHospede(novoHospede);
+			break;
+			
+			}
+			
+			case 2: {
+			System.out.println("======== ESCOLHER QUARTO ========");
+			
+			System.out.println("Qual quarto para o cliente ? : ");
+			sc.nextInt();
+			Quartos vaga = new Quartos();
+			vaga.numerodequartos();
+			
+			break;
+			
+			}
+			
+			case 3: {
+			
+			System.out.println("========= CLIENTES HOSPEDADOS ==========");
+		
+				novoQuarto.listarHospede();
+				int referencia = sc.nextInt();
+				sc.nextLine();
+				break;
+				
+				
+			}
+		
+			case 4: {
+		    System.out.println("======== FAZER CHECKOUT ===========");
+		    int referencia = sc.nextInt();
+			sc.nextLine();
+		    novoQuarto.listarHospede();
+		    Quartos.size();
+		    
+		    
+			
+			
+			break;
+			
+			
+			}
+		
+			
+				
+			case 0: {
+			System.out.println("========= SAIR ============");
+			 System.out.println(" SAINDO...");
+			}
+			default:
+				System.out.println("Opção inválida, digite a opção correta seu IMBECIL!!!!!! ");
+			}
+		
+			
+		}while(opcao !=0); 
+        
+		}
+		
+		
+
+        
+        }
+
+    
+    
+    
+    
+    
+    
+
+

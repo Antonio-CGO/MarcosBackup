@@ -1,0 +1,40 @@
+import java.util.Scanner;
+import java.util.Calendar;
+
+public class Hotel {
+		
+		
+      public static void main(String[] args) {
+		
+	}
+		System.out.println("");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ *. SEJA BEM VINDO .* ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬");
+		System.out.println("------------------ *o* HOTEL HOSPÍCIO *o* --------------------");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§");
+		System.out.println("");
+	    
+		
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o nome completo do Cliente: ");
+		String nome = sc.nextLine();
+		
+	
+		
+		
+		
+
+		
+
+    
+    
+    
+    
+    
+    
+
+}
+}

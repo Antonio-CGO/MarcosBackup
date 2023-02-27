@@ -1,0 +1,65 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+
+
+public class Hospede {
+	
+	private String nome;
+	//nome = void (nome nome.length() < 10 || nome.length() > 40);
+	private String CPF;
+	String regex = "\\d{3}[.-]?\\d{3}[.-]?\\d{3}[.-]?\\d{2}";
+    Pattern pattern = Pattern.compile(regex);
+	
+	private String endereço;
+	public Hospede() {
+		
+	}
+	
+	public Hospede (String nome, String CPF, String endereço) {
+		setNome(nome);
+		setCPF(CPF);
+		setEndereço(endereço);
+		
+		
+	}
+
+	
+	
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome (String nome) {
+	 this.nome = nome;
+	}
+	 
+	public String getCPF( ) {
+		return CPF;
+	}
+	
+    public void setCPF (String CPF) {
+		this.CPF = CPF;
+	}
+    
+    public String getEndereço(){
+      return endereço;
+    }
+
+    public void setEndereço (String endereço) {
+    	this.endereço = endereço;
+    
+    }
+    
+    void listar() {
+    System.out.println("Nome: " + this.nome);
+    System.out.println("CPF: " + this.CPF);
+    System.out.println("Endereço: " + this.endereço);
+  
+    
+    }
+    
+	}
+    
+

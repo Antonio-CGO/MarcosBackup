@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+
+
+public class Hospede {
+	
+
+public static void main(String[] args) {
+	
+}
+	 
+	
+	private String nome;
+	private String CPF;
+	private String endereço;
+	public Hospede() {
+		
+	}
+	
+	public Hospede () {
+		setNome(nome);
+		setCPF(CPF);
+		setEndereço(endereço);
+		
+		
+	}
+
+	
+	
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome (String nome) {
+	 this.nome = nome;
+	}
+	 
+	public String getCPF( ) {
+		return CPF;
+	}
+	
+    public void setCPF (String CPF) {
+		this.CPF = CPF;
+	}
+    
+    public String getEndereço(){
+      return endereço;
+    }
+
+    public void setEndereço (String endereço) {
+    	this.endereço = endereço;
+    
+    }
+    
+    void listar() {
+    System.out.println("Nome: " + this.nome);
+    System.out.println("CPF: " + this.CPF);
+    System.out.println("Endereço: " + this.endereço);
+  
+    
+    }
+    
+	}
+    
+

@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+
+
+
+public class Hospede extends Hotel {
+	
+	private String nome;
+	private String cpf;
+	private String endereço;
+	
+	public Hospede () {
+		
+	}
+	public Hospede (String nome, String cpf, String endereço) {
+		setNome(nome);
+		setCpf(cpf);
+		setEndereço(endereço);
+	}
+
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome (String nome) {
+	 this.nome = nome;
+	}
+    
+    public String getEndereço(){
+      return endereço;
+    }
+
+    public void setEndereço (String endereço) {
+    	this.endereço = endereço;
+    
+    }
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	
+	 void listar() {
+		    System.out.println("Nome: " + this.nome);
+		    System.out.println("CPF: " + this.cpf);
+		    System.out.println("Endereço: " + this.endereço);
+		    }
+}
+

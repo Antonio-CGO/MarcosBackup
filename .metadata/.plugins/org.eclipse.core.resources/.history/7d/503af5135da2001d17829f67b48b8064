@@ -1,0 +1,65 @@
+
+import java.util.ArrayList;
+
+public class Quartos {
+	
+	ArrayList<Hospede> listadehospedes;
+	public Quartos() {
+	this.listadehospedes = new ArrayList<>();
+	}
+	
+	void insereHospede (Hospede novoHospede) {
+		
+		listadehospedes.add(novoHospede);
+	}
+	
+	void listarHospede() {
+	System.out.println("Lista de Hóspedes: ");
+	 for(Hospede a: listadehospedes);
+	}
+	
+	
+	
+//int[] quarto = { 201,202,203,204,301,302,303,304};
+
+   public static void main(String[] args) {
+	   int quarto;
+	numerodequartos();
+}
+
+static void numerodequartos() {
+	
+
+	int[] quarto = new int [8];
+	
+	
+	quarto[0] = 201;
+	quarto[1] = 202; 
+	quarto[2] = 203; 
+	quarto[3] = 204; 
+	quarto[4] = 301; 
+	quarto[5] = 302;
+	quarto[6] = 303;
+	quarto[7] = 304;
+	
+	
+	if (201 <= 304) {
+     System.out.println("Quarto cadastrado com sucesso!!!!");
+}
+	else {
+		System.out.println("Quarto inexistente");
+ 
+	}
+
+	
+
+
+
+}
+
+
+}
+
+
+
+

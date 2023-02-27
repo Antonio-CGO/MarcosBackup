@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;CalculaSoma&apos;&#x0A;- Original project: &apos;CalculaSoma&apos;&#x0A;- Original element: &apos;SomasdeString.java&apos;" description="Delete element" element1="/src&lt;{SomasdeString.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1673968269945" subPackages="false" version="1.0"/>
+</session>

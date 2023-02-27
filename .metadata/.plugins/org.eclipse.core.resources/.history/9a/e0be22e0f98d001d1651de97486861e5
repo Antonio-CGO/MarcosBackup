@@ -1,0 +1,11 @@
+
+// Classe filha, herda tudo da classe mae Funcionario 
+public class Diretor extends Funcionario {	
+	
+	
+	//Regra de bonificação padrão + 600$
+	    public double getBonificacao() {
+	    	return super.getBonificacao() + 600;
+	    
+}
+}

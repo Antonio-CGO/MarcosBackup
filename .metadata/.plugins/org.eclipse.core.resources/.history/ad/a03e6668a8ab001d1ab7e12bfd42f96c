@@ -1,0 +1,23 @@
+
+import java.util.Calendar;
+
+public class Atualdataehora {
+
+	public static void main(String[] args) {
+
+		Calendar c = Calendar.getInstance();
+		System.out.println(" Data e hora atual: "+ c.getTime());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
